@@ -3,37 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> 
     <title>Mary Smith | Creative Digital Designer</title>
-    <meta name="description" content="Hi I'm Mary, a UI & UX designer based in Dublin. Mobile and Responsive Web Design, eCommerce Websites, Branding and Logo Design.">
+    <meta name="description" content="Hi I'm Gabriel Longo, a UI & UX designer based in Dublin. Mobile and Responsive Web Design, eCommerce Websites, Branding and Logo Design.">
     <link rel="stylesheet" href="assets/css/global.css"> 
 
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C6MMWF2QZS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C6MMWF2QZS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-C6MMWF2QZS');
+    </script>
 
-  gtag('config', 'G-C6MMWF2QZS');
-</script>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">    
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">    
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">    
+    <link rel="manifest" href="assets/img/favicons/site.webmanifest">
 
     
-<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">    
-<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">    
-<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">    
-<link rel="manifest" href="assets/img/favicons/site.webmanifest">
+    <!-- Styles for Cookie Consent Popup Message  -->
+    <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet">
 
 </head>
 
 <body>
-
-
     <header>
-        <h1>Hi, I'm Mary Smith</h1>
+        <h1>Hi, I'm Gabriel Longo</h1>
         <h2>Web / UI Designer</h2>
-        <img src="assets/img/developer.jpg" alt=" Mary Smith: Web Designer">
-        
+        <img src="assets/img/developer.jpg" alt="Gabriel Longo: Web Designer">
     </header>    
 
     <p><a href="exercises/page-1.html">A Tale of Two Cities</a></p>
@@ -42,8 +40,26 @@
     <p><a href="exercises/page-4.html">Vincent van Gogh</a></p> 
     <p><a href="exercises/page-5.html">Irish Tourism</a></p>
     <p><a href="exercises/hero-image.html">Hero block with background image</a></p> 
+    <p><a href="exercises/hero-text.html">Hero block with animated text</a></p>
+
+    
+    <!-- JavaScript for Cookie Consent Popup Message -->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+        "palette": {
+            "popup": {
+                "background": "#000"
+            },
+            "button": {
+                "background": "#f1d600"
+            }
+        },
+        "content": {
+            "href": "https://gabrielclongo.github.io/privacy.html"
+        }
+    });
+    </script>
 
 </body>
 </html>
-
-<p><a href="exercises/hero-text.html">Hero block with animated text</a></p>
