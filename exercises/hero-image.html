@@ -6,10 +6,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hero Block with Video</title>
-    <meta name="description" content="A hero block with a background video that plays in a continuous loop and includes a tinted overlay.">   
-    <link rel="preload" href="assets\videos\IMG_4912.MOV" as="image">
-    <link rel="stylesheet" href="assets/css/hero-video.css">
+    <title>Hero Block with Image</title>
+    <meta name="description" content="A hero block with a background image and a tinted overlay.">  
+
+    <link rel="preload" href="exercises/assets/img/business.jpg" as="image">
+    <link rel="stylesheet" href="exercises/assets/css/hero-image.css">
 
     
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">    
@@ -27,18 +28,16 @@
     <header>
 
         <div class="hero-text-container">
-            <h1 class="slide-in-top">Education for Life</h1>
-<h2 class="slide-in-left">A brighter career and future</h2>
+            <h1 class="slide-in-top">Albert Campus</h1>
+            <h2 class="slide-in-left">Creative Web Developer</h2>
         </div>
 
         <div class="hero-bg-media">
-            <video loop playsinline muted autoplay poster="assets\videos/hero-still.jpg" class="background-video" disablepictureinpicture preload="auto"> 
-            <source src="assets\videos/hero-video.mp4" type="video/mp4">
-            </video>
+            <img src="assets/img/business.jpg" alt="sample background image">   
         </div>
 
         <div class="bg-overlay"></div>
-
+        
     </header>
     <!-- /hero block -->
 

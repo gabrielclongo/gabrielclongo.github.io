@@ -1,3 +1,5 @@
+/* Gabriel Longo 77804 */
+
 /*  ============= WEB BROWSER RESETS ============ */
 * { margin: 0; padding: 0; border: none }
 *, *::before, *::after { box-sizing: border-box }
@@ -93,18 +95,13 @@ section > * { max-width: 1600px }
 section > * { max-width: 1600px; margin-left: auto; margin-right: auto }
 
 /* ============= TYPOGRAPHY ============ */
-
-
-body { background-color: #7d3c98; }
-
+body { background-color: #7D3C98;}
 h1 {
-    font-size: calc(var(--fs-xxxl) * 1.4);
+    font-size: var(--fs-xxxl);
     margin-top: 32px;
     line-height: 1.2;
     font-family: var(--font-serif);
     font-weight: normal;
-    text-align: center;
-    letter-spacing: -3px; 
     color: white;
 }
 
@@ -114,15 +111,38 @@ h2 {
     margin-top: 48px; 
     margin-bottom: 6px;
     font-family: var(--font-serif);
-    letter-spacing: -1px;
-    text-transform: uppercase;
     color: white;
 }
-
+h3 {
+    font-size: var(--fs-xl);
+    line-height: 1.2;
+    margin-top: 48px; 
+    margin-bottom: 6px;
+    font-family: var(--font-serif);
+    color: white;
+}
+h4 {
+    font-size: var(--fs-xl);
+    line-height: 1.2;
+    margin-top: 48px; 
+    margin-bottom: 6px;
+    font-family: var(--font-serif);
+    color: white;
+}
+h5 {
+    font-size: var(--fs-xl);
+    line-height: 1.2;
+    margin-top: 48px; 
+    margin-bottom: 6px;
+    font-family: var(--font-serif);
+    color: white;
+}
 p {
-    font-size: var(--fs-base);
+	font-size: var(--fs-base);
     line-height: 1.7;
-    margin-bottom: 12px;
+	margin-bottom: 12px;
     font-family: var(--font-sans);
     color: white;
 }
+
+a {color: white;}
