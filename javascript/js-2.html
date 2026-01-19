@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="bigHeading">heading</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae porro temporibus enim hic quibusdam sed accusamus, voluptates, labore ratione, nihil distinctio perspiciatis sunt tempora. Dolorem asperiores eveniet illo doloribus qui.</p>
+
+    <!-- Button linked to event handler function -->
+<button id="btn_1" onclick="changeHeading()">Update h1</button>
+<script>
+// ======== FUNCTION DECLARATIONS ========
+
+// Function declaration	
+function displayGreeting() {
+   console.log('Hello, world!');
+}
+// Outputs 'Hello, world!' to Console when called
+displayGreeting() 
+// Function declaration with parameter
+function showNumber(num) {
+   console.log(`Number passed as parameter is: ${num}`);
+}
+
+// Function call with argument
+showNumber(42
+); 
+// Function declaration with two parameters
+function addTwoNumbers(num1, num2) {
+    // Outputs the sum of two numbers
+    console.log(`Sum is : ${num1 + num2}`); 
+    return (num1 + num2);
+}
+
+// Function call with two arguments
+let funcResult = addTwoNumbers(1, 2);
+let firstName = 'Gabriel';
+let surname = 'Longo';
+
+// Function to change the heading properties and content
+function changeHeading() {
+    // Get the HTML heading element from the web page
+    let bigHeading = document.getElementById('bigHeading');
+    // Update HTML element styles directly;
+    bigHeading.style.backgroundColor = 'red';
+    bigHeading.style.color = 'white';
+    // Update HTML element content
+    bigHeading.innerText = 'New heading text from JS';
+    // Update the HTML element content with HTML tag included
+    bigHeading.innerHTML = 'New heading text in <i>italics</i> from JS';
+}
+</script>
+</body>
+</html>
