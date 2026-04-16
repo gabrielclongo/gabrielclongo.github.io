@@ -1,0 +1,131 @@
+<!-- Gabriel Longo 77804-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Counter</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* Page layout */
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg,#f4b183,#4bc0c8);
+}
+
+/* Container */
+.container{
+    text-align:center;
+}
+
+/* Counter text */
+#value{
+    font-size:80px;
+    color:#222;
+}
+
+/* Buttons */
+.button-container{
+    margin-top:25px;
+}
+
+button{
+    padding:12px 20px;
+    margin:10px;
+    font-size:16px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:white;
+    box-shadow:0 3px 6px rgba(0,0,0,0.2);
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Counter</h1>
+
+<h2><span id="value">0</span></h2>
+
+<div class="button-container">
+
+<button class="btn" id="decrease">
+<i class="fa-solid fa-circle-minus"></i> Decrease
+</button>
+
+<button class="btn" id="reset">
+<i class="fa-solid fa-rotate-left"></i> Reset
+</button>
+
+<button class="btn" id="increase">
+<i class="fa-solid fa-circle-plus"></i> Increase
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+// counter variable
+let count = 0;
+
+// get elements
+const value = document.getElementById("value");
+const buttonContainer = document.querySelector(".button-container");
+
+// event listener
+buttonContainer.addEventListener("click", (e) => {
+
+    if (e.target.classList.contains("btn")) {
+
+        if (e.target.id === "increase") {
+            count++;
+
+        } else if (e.target.id === "decrease") {
+            count--;
+
+        } else if (e.target.id === "reset") {
+            count = 0;
+        }
+
+        value.innerText = count;
+
+        if (count > 0) {
+            value.style.color = "green";
+
+        } else if (count < 0) {
+            value.style.color = "red";
+
+        } else {
+            value.style.color = "#222";
+        }
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>

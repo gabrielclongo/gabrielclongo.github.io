@@ -1,0 +1,238 @@
+<!-- Gabriel Longo 77804-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bavuudorj Khatanbaatar 78853</title>
+</head>
+
+
+ <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 40px;
+        color: #333;
+    }
+
+    /* Form container */
+    .label-above {
+        max-width: 480px;
+        margin: 40px auto;
+        padding: 32px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+    }
+
+    /* Each label/input pair */
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    /* Labels above their fields */
+    .form-group label {
+        font-weight: bold;
+        margin-bottom: 6px;
+        color: #333;
+    }
+
+    /* Input fields */
+    .form-group input {
+        padding: 10px 12px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+        transition: border-color 0.2s ease;
+    }
+
+    .form-group input:focus {
+        border-color: #007BFF;
+    }
+
+    /* Error messages — hidden by default */
+    .error-text {
+        margin-top: 6px;
+        font-size: 0.875rem;
+        color: #dc3545;
+        display: none;
+    }
+
+    /* Submit button */
+    button[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #fff;
+        background-color: #007BFF;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<body>
+
+     <h1>Student Sign-in Form</h1>
+        <form id="myBigForm" class="label-above">
+        <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="e.g., John" required>
+            <span id="firstNameError" class="error-text">First name is required.</span>
+        </div>
+
+        <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="e.g., Smith" required>
+            <span id="lastNameError" class="error-text">Last name is required.</span>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="e.g., [email protected]" required>
+            <span id="emailError" class="error-text">Please enter a valid email address.</span>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <span id="passwordError" class="error-text">Password must be at least 8 characters.</span>
+        </div>
+
+        <div class="form-group">
+            <label for="studentId">Student ID:</label>
+            <input type="number" id="studentId" name="studentId" placeholder="5-digit ID (10000-99999)" required>
+            <span id="studentIdError" class="error-text">ID must be in range 10000-99999</span>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+    
+
+</body>
+
+<script>
+
+            // Get the form from the HTML using its unique ID
+        const formStudentReg = document.getElementById("myBigForm");
+
+        // Handle the submit event of the form
+        formStudentReg.addEventListener("submit", e => {   
+            
+            // Prevent data from being sent to a server and page from reloading
+            e.preventDefault(); 
+            
+            // Get the input values after 'cleaning' them 
+            const firstName = document.getElementById("firstName").value.trim();
+            const lastName = document.getElementById("lastName").value.trim();
+            
+            // Set up Boolean for simple validation
+            let isValid = true;
+            
+            // Test input values and show/hide error messages
+            if (firstName === "") {
+                document.getElementById("firstNameError").style.display = "block";
+                isValid = false;
+            } else {
+                document.getElementById("firstNameError").style.display = "none";
+            }
+            
+            if (lastName === "") {
+                document.getElementById("lastNameError").style.display = "block";
+                isValid = false;
+            } else {
+                document.getElementById("lastNameError").style.display = "none";
+            }
+            
+            // If valid, process the data
+            if (isValid) {
+                console.log(`Welcome, ${firstName} ${lastName}!`);
+                formStudentReg.reset(); // Clears all fields
+            }
+        });
+
+        function validateEmail(email) {
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailPattern.test(email);
+        }
+
+        if (!validateEmail(document.getElementById("email").value.trim())) {
+            document.getElementById("emailError").style.display = "block";
+            isValid = false;
+        } else {
+            document.getElementById("emailError").style.display = "none";
+        }
+
+        function validatePassword(password) {
+            return password.length >= 8;
+        }
+
+        // Validate password meets minimum requirements
+        if (!validatePassword(document.getElementById("password").value.trim())) {
+            document.getElementById("passwordError").style.display = "block";
+            isValid = false;
+        } else {
+            document.getElementById("passwordError").style.display = "none";
+        }
+
+
+        const studentId = document.getElementById("studentId").value.trim();    
+        if (studentId < 10000 || studentId > 99999) {
+            document.getElementById("studentIdError").style.display = "block";
+            isValid = false;
+        } else {
+            document.getElementById("studentIdError").style.display = "none";
+        }
+
+        // INPUT: Checks user's input on every keystroke and provides instant feedback
+        document.getElementById("studentId").addEventListener("input", () => {
+            const studentId = document.getElementById("studentId").value.trim();
+            if (studentId < 10000 || studentId > 99999) {
+                document.getElementById("studentIdError").style.display = "block";
+            } else {
+                document.getElementById("studentIdError").style.display = "none";
+            }
+        });
+
+        // Listen for keystrokes anywhere on the page
+        document.addEventListener("keydown", e => {
+            // Check which key was pressed and if Ctrl/Cmd is held
+            if (e.key === "Escape") {
+                // Clear all forms on Escape
+                document.querySelectorAll("form").forEach(form => form.reset());
+                console.log("All fields cleared via Escape key.");
+            }
+            
+            // Ctrl+Enter to submit (useful for long forms)
+            if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) {
+                const activeForm = document.querySelector("form:focus-within");
+                if (activeForm) {
+                    activeForm.dispatchEvent(new Event("submit", { bubbles: true, cancelable: true }));
+                }
+            }
+        });
+
+</script>
+    
+
+
+
+</html>

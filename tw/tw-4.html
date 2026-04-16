@@ -1,0 +1,105 @@
+<!--Gabriel Longo 77804--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Meetup Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans text-gray-900">
+
+  <!-- Header -->
+  <header class="sticky top-0 bg-white shadow z-50">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between py-4 px-6">
+      <h1 class="text-xl font-semibold">Tech Meetup</h1>
+      <ul class="flex gap-6 text-sm">
+        <li><a href="#schedule" class="hover:text-blue-600 focus:text-blue-600">Schedule</a></li>
+        <li><a href="#speakers" class="hover:text-blue-600 focus:text-blue-600">Speakers</a></li>
+        <li><a href="#footer" class="hover:text-blue-600 focus:text-blue-600">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gray-100 text-center py-20 px-6">
+    <h2 class="text-4xl md:text-5xl font-bold mb-6">Join Our Tech Innovators Meetup</h2>
+    <p class="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-8">
+      A gathering of developers, designers, entrepreneurs, and tech enthusiasts.
+    </p>
+    <a href="#register"
+       class="inline-block bg-blue-600 text-white text-lg px-8 py-3 rounded hover:bg-blue-700 focus:bg-blue-700 transition">
+      Register Now
+    </a>
+  </section>
+
+  <!-- Schedule -->
+  <section id="schedule" class="max-w-6xl mx-auto py-16 px-6">
+    <h3 class="text-3xl font-semibold text-center mb-12">Event Schedule</h3>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      <div>
+        <h4 class="text-xl font-medium mb-2">Welcome & Keynote</h4>
+        <p class="text-gray-700 mb-4">10:00 AM - 11:00 AM</p>
+        <p class="text-gray-600">
+          Introduction to the event and keynote on the future of AI-driven development.
+        </p>
+      </div>
+      <div>
+        <h4 class="text-xl font-medium mb-2">Workshop Sessions</h4>
+        <p class="text-gray-700 mb-4">11:30 AM - 2:00 PM</p>
+        <p class="text-gray-600">
+          Hands-on workshops covering cloud computing, frontend frameworks, and DevOps.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Speakers -->
+  <section id="speakers" class="bg-gray-50 py-16 px-6">
+    <h3 class="text-3xl font-semibold text-center mb-12">Featured Speakers</h3>
+
+    <div class="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-10">
+      
+      <!-- Speaker Card -->
+      <div class="bg-white shadow rounded-lg p-6 text-center">
+        <img src="https://placehold.co/200x200" alt="" class="w-32 h-32 object-cover rounded-full mx-auto mb-4">
+        <h4 class="text-lg font-semibold">Alex Rivera</h4>
+        <p class="text-sm text-gray-600 mb-4">Software Architect</p>
+        <a href="#" class="text-blue-600 underline hover:text-red-800 hover:no-underline focus:text-red-800">View Profile</a>
+      </div>
+
+      <div class="bg-white shadow rounded-lg p-6 text-center">
+        <img src="https://placehold.co/200x200" alt="" class="w-32 h-32 object-cover rounded-full mx-auto mb-4">
+        <h4 class="text-lg font-semibold">Morgan Lee</h4>
+        <p class="text-sm text-gray-600 mb-4">UX Engineer</p>
+        <a href="#" class="text-blue-600 underline hover:text-red-800 hover:no-underline focus:text-red-800">View Profile</a>
+      </div>
+
+      <div class="bg-white shadow rounded-lg p-6 text-center">
+        <img src="https://placehold.co/200x200" alt="" class="w-32 h-32 object-cover rounded-full mx-auto mb-4">
+        <h4 class="text-lg font-semibold">Sam Patel</h4>
+        <p class="text-sm text-gray-600 mb-4">Cloud Specialist</p>
+        <a href="#" class="text-blue-600 underline hover:text-red-800 hover:no-underline focus:text-red-800">View Profile</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="bg-gray-900 text-gray-300 text-center py 10">
+    <div class="py-8">
+      <p class="mb-4">Follow us:</p>
+      <div class="flex justify-center gap-6">
+        <a href="#" class="hover:text-white focus:text-white">Twitter</a>
+        <a href="#" class="hover:text-white focus:text-white">LinkedIn</a>
+        <a href="#" class="hover:text-white focus:text-white">GitHub</a>
+      </div>
+    </div>
+    <p class="text-sm py-4">© 2025 Tech Meetup. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

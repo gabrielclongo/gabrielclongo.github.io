@@ -1,0 +1,99 @@
+<!-- Gabriel Longo 77804-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Random Colour Generator</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+
+#bigSection{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+h2{
+    background:black;
+    color:white;
+    padding:15px 25px;
+    border-radius:6px;
+}
+
+#box-colour{
+    background:#2ecc71;
+    padding:5px 10px;
+    border-radius:4px;
+    margin-left:10px;
+}
+
+button{
+    margin-top:25px;
+    padding:15px 30px;
+    font-size:18px;
+    border-radius:30px;
+    border:none;
+    background:blue;
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:0.85;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section id="bigSection">
+
+<h2>Background Colour: <span id="box-colour">#ffffff</span></h2>
+
+<button id="btn-change-colour">Click me</button>
+
+</section>
+
+<script>
+
+const btnColour = document.getElementById('btn-change-colour');
+const boxDisplay = document.getElementById('box-colour');
+const bigSection = document.getElementById('bigSection');
+
+btnColour.addEventListener('click', () => {
+
+    let strHexColour = '#';
+    const arrHex = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F'];
+
+    for (let i = 0; i < 6; i++){
+        strHexColour += arrHex[getRandomNumber(arrHex.length)];
+    }
+
+    boxDisplay.innerText = strHexColour;
+    bigSection.style.backgroundColor = strHexColour;
+
+});
+
+// Generate random number in range from 0 to max-1
+function getRandomNumber(max) {
+    return Math.floor(Math.random() * max);
+}
+
+</script>
+
+</body>
+</html>

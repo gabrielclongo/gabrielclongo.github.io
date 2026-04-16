@@ -1,0 +1,67 @@
+<!--Gabriel Longo 77804--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation Layout</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans text-gray-900">
+
+  <div class="lg:flex min-h-screen">
+
+    <!-- Sidebar (visible on large screens) -->
+    <aside class="hidden lg:block w-64 border-r border-gray-200 p-6">
+      <nav class="space-y-4 text-sm">
+        <a href="#" class="block hover:text-blue-600">Introduction</a>
+        <a href="#" class="block hover:text-blue-600">Getting Started</a>
+        <a href="#" class="block hover:text-blue-600">Components</a>
+        <a href="#" class="block hover:text-blue-600">API Reference</a>
+        <a href="#" class="block hover:text-blue-600">FAQ</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6">
+      
+      <!-- Edit on GitHub Button -->
+      <div class="mb-8">
+        <a href="#"
+           class="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-md text-sm
+                  hover:bg-gray-100 focus:bg-gray-100 transition">
+          Edit on GitHub
+        </a>
+      </div>
+
+      <!-- Documentation Content -->
+      <div class="max-w-prose">
+
+        <h1 class="text-3xl font-semibold mb-6">Documentation Title</h1>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          This documentation layout is designed for readability and clarity. On larger screens,
+          a left navigation sidebar appears. On smaller screens, the layout stacks naturally so
+          navigation links can appear elsewhere as needed.
+        </p>
+
+        <h2 class="text-2xl font-semibold mt-10 mb-4">Section Heading</h2>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          The main content area is constrained using <code>max-w-prose</code> to maintain
+          an optimal reading line-length. This improves readability in longer-form documentation.
+        </p>
+
+        <h3 class="text-xl font-semibold mt-10 mb-3">Subsection Heading</h3>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          Tailwind utility classes allow design adjustments directly in the markup without
+          maintaining a separate stylesheet for layout-specific rules.
+        </p>
+
+      </div>
+    </main>
+
+  </div>
+
+</body>
+</html>

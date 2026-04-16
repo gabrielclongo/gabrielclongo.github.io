@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #ff7e7e, #6dd5ed);
+}
+
+.header {
+  background: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  width: 200px;
+  border-radius: 20px;
+  border: none;
+}
+
+.movies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 40px;
+  gap: 20px;
+}
+
+.movie {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.movie img {
+  width: 100%;
+}
+
+.movie h3 {
+  padding: 10px;
+}

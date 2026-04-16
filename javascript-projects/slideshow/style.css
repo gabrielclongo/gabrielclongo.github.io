@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #ff7e7e, #6dd5ed);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.slideshow {
+  position: relative;
+  border: 8px solid blue;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+
+.slideshow img {
+  width: 800px;
+  height: 450px;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.5s ease;
+}
+
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ff6b6b;
+  border: none;
+  color: white;
+  font-size: 22px;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}

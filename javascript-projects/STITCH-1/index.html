@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Smithfield Roast &amp; Iron | The Artisanal Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,700;1,400;1,700&amp;family=Manrope:wght@400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed": "#2b1613",
+              "outline-variant": "#d3c3c0",
+              "secondary-container": "#d5e5c5",
+              "secondary-fixed": "#d8e8c8",
+              "on-surface": "#1c1c19",
+              "on-tertiary": "#ffffff",
+              "inverse-surface": "#31302d",
+              "on-primary-container": "#ae8d87",
+              "surface-tint": "#745853",
+              "on-error-container": "#93000a",
+              "secondary-fixed-dim": "#bcccad",
+              "inverse-primary": "#e3beb8",
+              "error-container": "#ffdad6",
+              "surface-container-low": "#f6f3ee",
+              "outline": "#827472",
+              "surface-variant": "#e5e2dd",
+              "on-error": "#ffffff",
+              "on-tertiary-container": "#e27651",
+              "on-secondary": "#ffffff",
+              "on-secondary-fixed": "#131f0b",
+              "on-primary": "#ffffff",
+              "surface-dim": "#dcdad5",
+              "tertiary-fixed": "#ffdbd0",
+              "surface-bright": "#fcf9f4",
+              "on-tertiary-fixed-variant": "#7e2b0d",
+              "tertiary-container": "#571600",
+              "on-tertiary-fixed": "#390b00",
+              "inverse-on-surface": "#f3f0eb",
+              "primary-fixed-dim": "#e3beb8",
+              "surface-container": "#f0ede8",
+              "surface": "#fcf9f4",
+              "on-secondary-container": "#59674d",
+              "primary": "#271310",
+              "on-surface-variant": "#504442",
+              "error": "#ba1a1a",
+              "secondary": "#556349",
+              "on-secondary-fixed-variant": "#3d4b33",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-high": "#ebe8e3",
+              "surface-container-highest": "#e5e2dd",
+              "tertiary": "#340900",
+              "primary-container": "#3e2723",
+              "primary-fixed": "#ffdad4",
+              "tertiary-fixed-dim": "#ffb59d",
+              "on-primary-fixed-variant": "#5b403c",
+              "background": "#fcf9f4",
+              "on-background": "#1c1c19"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Manrope", "sans-serif"],
+              "label": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.5rem", "xl": "1rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #fcf9f4; color: #1c1c19; }
+        .font-serif { font-family: 'Newsreader', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface selection:bg-secondary-container">
+<!-- TopAppBar Shell -->
+<header class="fixed top-0 w-full z-50 bg-[#fcf9f4]/80 backdrop-blur-md">
+<nav class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="coffee_maker">coffee_maker</span>
+<span class="text-2xl font-serif italic text-[#271310]">The Artisanal Archive</span>
+</div>
+<div class="hidden md:flex items-center gap-12 font-serif text-[#271310] uppercase tracking-widest text-sm">
+<a class="text-[#271310] border-b-2 border-[#340900] hover:text-[#340900] transition-colors duration-300" href="#menu">Menu</a>
+<a class="text-[#504442] hover:text-[#340900] transition-colors duration-300" href="#story">Our Story</a>
+<a class="text-[#504442] hover:text-[#340900] transition-colors duration-300" href="#gallery">Gallery</a>
+<a class="text-[#504442] hover:text-[#340900] transition-colors duration-300" href="#location">Location</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label font-semibold text-sm hover:opacity-90 transition-all active:scale-[0.99]">
+                Visit Us
+            </button>
+</nav>
+</header>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative min-h-[795px] flex items-center overflow-hidden px-8">
+<div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-6 z-10 space-y-8">
+<h1 class="font-headline text-6xl md:text-8xl text-primary leading-[0.9] tracking-tighter">
+                        Smithfield <br/> <span class="italic font-normal">Roast &amp; Iron</span>
+</h1>
+<p class="font-body text-lg text-on-surface-variant max-w-md leading-relaxed">
+                        Precision-roasted beans meets industrial heritage in the heart of Dublin 7. A curated ritual for the modern urban dweller.
+                    </p>
+<div class="flex items-center gap-6 pt-4">
+<a class="bg-primary text-on-primary px-8 py-4 rounded-lg font-label font-bold tracking-tight hover:bg-primary-container transition-colors shadow-sm" href="#menu">
+                            View Menu
+                        </a>
+<a class="text-primary font-label font-bold border-b-2 border-tertiary-fixed-dim pb-1 hover:border-primary transition-all" href="#story">
+                            Our Story
+                        </a>
+</div>
+</div>
+<div class="lg:col-span-6 relative h-[600px] md:h-[700px]">
+<div class="absolute inset-0 bg-surface-container-highest rounded-xl overflow-hidden shadow-2xl">
+<img alt="Artisanal Coffee and Pastry" class="w-full h-full object-cover" data-alt="Close up of latte art and flaky croissant on industrial table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA56cAo5lZb-SqtZUYRPezYoguLFRteEVsQAOWIuf2fP34BtlbC8sD_2rCOxflkeMTLNzvUZoG7AHF-s-i_I37I-PHMFbdVNE5tgOx6MxJZDlB3NJkrmO6-6AKYwfzKT6Jo9NIQwcve4xgZxUurYmKalnxqZAl8r_aPuZmrioZ39AEv3dl1ngV9OQPDvCRy7KDb0tQH9meb5v7XhD3b77YaaW7KRqDfrzaKY0sg8IDU39Du5RzEtsKp0Bd5976h4MZugJT2ikk0iw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+</div>
+<!-- Overlapping Decorative Element -->
+<div class="absolute -bottom-6 -left-6 bg-secondary-container p-8 rounded-xl hidden md:block">
+<p class="font-headline text-2xl italic text-on-secondary-container">Freshly baked daily.</p>
+<p class="font-label text-xs uppercase tracking-widest mt-2 text-on-secondary-container/70">Smithfield Square, D7</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Story Section -->
+<section class="py-32 bg-surface-container-low" id="story">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="relative aspect-[4/5] bg-surface-container-highest rounded-xl overflow-hidden order-2 md:order-1">
+<img alt="Industrial Cafe Interior" class="w-full h-full object-cover grayscale-[0.2]" data-alt="Industrial chic coffee shop interior with exposed brick" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDThd7icGzDio95SkNFwfMZyc8bxRjqSerp8B85Xly7ESwW4JC5RF3QiIIW2E_MsNNSY2HuOvYLtC3jasELiw22en2BD5X64m1pRsEPabK8xIa_of7Mbe_SBUbfRvZq1RKfmjDh9oyavDD5U2sPr9RqFR9N_tDVxH2V6Su_CzORhKeEHSAENxCQ8riWYJA04SZ4VCtDaLIs-b2tdf-AjbPKZnQ8C7Nlmu-0mAzfHsLNpZjRjdkczFC4l-tdO7UR1upF4oBFENkBsw"/>
+</div>
+<div class="order-1 md:order-2 space-y-8">
+<span class="font-label text-xs uppercase tracking-[0.3em] text-secondary font-extrabold">The Foundation</span>
+<h2 class="font-headline text-5xl text-primary leading-tight">Crafting Community in the Smoke &amp; Iron.</h2>
+<div class="space-y-6 font-body text-on-surface-variant leading-relaxed">
+<p>Established in the historic fabric of Smithfield, Roast &amp; Iron was born from a desire to blend Dublin's industrial grit with the warmth of artisanal hospitality.</p>
+<p>We source our beans directly from single-estate farmers, roasting in small batches to preserve the unique narrative of every harvest. Our space is more than a café; it's an archive of the neighborhood's evolving spirit.</p>
+</div>
+<div class="grid grid-cols-2 gap-8 pt-8">
+<div>
+<p class="font-headline text-4xl text-tertiary">12</p>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Signature Roasts</p>
+</div>
+<div>
+<p class="font-headline text-4xl text-tertiary">07</p>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Dublin District</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Grid Section -->
+<section class="py-32 bg-surface" id="menu">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-24">
+<h2 class="font-headline text-6xl text-primary mb-4 italic">The Daily Archive</h2>
+<p class="font-label text-sm uppercase tracking-widest text-on-surface-variant">Curated Selections &amp; Seasonal Works</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<!-- Column: The Roast -->
+<div class="space-y-10">
+<div class="flex items-center gap-4 mb-8">
+<span class="w-12 h-[1px] bg-outline-variant"></span>
+<h3 class="font-headline text-3xl text-primary">The Roast</h3>
+</div>
+<div class="space-y-8">
+<div class="group">
+<div class="flex justify-between items-baseline mb-2">
+<h4 class="font-body font-extrabold text-lg text-primary group-hover:text-secondary transition-colors">Smithfield Black</h4>
+<span class="font-serif italic text-primary">€3.80</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-snug">Double shot espresso, notes of dark chocolate &amp; peat.</p>
+</div>
+<div class="group">
+<div class="flex justify-between items-baseline mb-2">
+<h4 class="font-body font-extrabold text-lg text-primary group-hover:text-secondary transition-colors">Iron Flat White</h4>
+<span class="font-serif italic text-primary">€4.20</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-snug">Velvety micro-foam over our signature house blend.</p>
+</div>
+<div class="group">
+<div class="flex justify-between items-baseline mb-2">
+<h4 class="font-body font-extrabold text-lg text-primary group-hover:text-secondary transition-colors">V60 Precision</h4>
+<span class="font-serif italic text-primary">€5.50</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-snug">Rotating single origin pour-over. Ask for today's bean.</p>
+</div>
+</div>
+</div>
+<!-- Column: Sweet Bites -->
+<div class="space-y-10">
+<div class="flex items-center gap-4 mb-8">
+<span class="w-12 h-[1px] bg-outline-variant"></span>
+<h3 class="font-headline text-3xl text-primary">Sweet Bites</h3>
+</div>
+<div class="space-y-8">
+<div class="group">
+<div class="flex justify-between items-baseline mb-2">
+<h4 class="font-body font-extrabold text-lg text-primary group-hover:text-secondary transition-colors">Dublin Honey Cake</h4>
+<span class="font-serif italic text-primary">€6.50</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-snug">Layered sponge with local D7 rooftop honey.</p>
+</div>
+<div class="group">
+<div class="flex justify-between items-baseline mb-2">
+<h4 class="font-body font-extrabold text-lg text-primary group-hover:text-secondary transition-colors">Espresso Brownie</h4>
+<span class="font-serif italic text-primary">€4.50</span>
+                                00</div>
+<p class="text-sm text-on-surface-variant leading-snug">Dark Valrhona chocolate infused with our house roast.</p>
+</div>
+</div>
+</div>
+<!-- Column: Pastry Works -->
+<div class="space-y-10">
+<div class="flex items-center gap-4 mb-8">
+<span class="w-12 h-[1px] bg-outline-variant"></span>
+<h3 class="font-headline text-3xl text-primary">Pastry Works</h3>
+</div>
+<div class="space-y-8">
+<div class="group">
+<div class="flex justify-between items-baseline mb-2">
+<h4 class="font-body font-extrabold text-lg text-primary group-hover:text-secondary transition-colors">The Iron Croissant</h4>
+<span class="font-serif italic text-primary">€3.50</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-snug">48-hour fermented dough, exceptionally flaky.</p>
+</div>
+<div class="group">
+<div class="flex justify-between items-baseline mb-2">
+<h4 class="font-body font-extrabold text-lg text-primary group-hover:text-secondary transition-colors">Cardamom Knot</h4>
+<span class="font-serif italic text-primary">€4.00</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-snug">Scandinavian style with a Dublin twist. Hand-twisted.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="py-32 overflow-hidden" id="gallery">
+<div class="max-w-7xl mx-auto px-8 mb-16">
+<h2 class="font-headline text-5xl text-primary">The Atmosphere</h2>
+</div>
+<div class="flex gap-8 px-8 overflow-x-auto pb-8 scrollbar-hide no-scrollbar">
+<div class="min-w-[400px] h-[500px] bg-surface-container-high rounded-lg overflow-hidden shrink-0">
+<img alt="Cafe Seating" class="w-full h-full object-cover" data-alt="Modern minimalist wooden seating area in cafe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfovshMs3dFwnDR2Ll2rcmAOkRpYTHWkJWtAMmHZVdJQbz7_PRMGwQ9PcKkAu7m3aK6w71P09jwsTDBPedeEojFxQAPA6plhC56Vm_PPpGDIZVNxXWGs6RBstvVibeU0glhj9SKiUI6Q9KVZoTUB9HZa80Y2dWkF-PDvnyBesBffBMrg5RpU7hex0IQqRGlQeA7I1O9A--84fCFxM1zBqncEM2w4g5tpaL_-eRtShA309Vbvif43C_7NRXcH1GjdStsGmgLisQbw"/>
+</div>
+<div class="min-w-[600px] h-[500px] bg-surface-container-high rounded-lg overflow-hidden shrink-0 translate-y-12">
+<img alt="Coffee Brewing" class="w-full h-full object-cover" data-alt="Barista preparing a pour-over coffee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhTPABSoutH_XTqwaKLefYRvPRovXsb9VJY2he_HlwaImxXlDIuUw8qwraN9fVEqKTT1oXi5VNSK9MEaaklkwlXU0gXRcpsnDr4eu7PoEBR_S-wNZ9jecNUYG2s0btH5F2Pssj2xQ0YAz4Syfm6jOuw-Yx5-bh6W8Lm-h3Zx-DQ7jmFDjgZpMsRsALTg-JxjYZFEtj1ILFo0z3KSHXdV5VJOcMEzjwpzGG73WJzJDmI0d04kW2d__xnB1mzHv_1YYbKJBvLeF7tw"/>
+</div>
+<div class="min-w-[400px] h-[500px] bg-surface-container-high rounded-lg overflow-hidden shrink-0">
+<img alt="Coffee Beans" class="w-full h-full object-cover" data-alt="Close up of roasted coffee beans in a bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7IOyXAXnOcnnW2VjCXzjr5XHIqianO00QtZDx1VHJgddXBqyoA5c2_BiXG4hk6KOZ_KBe-QfntmStCWKRnJqzTVN3xWcSEUwqW4gXe5zYt640Gyx9jEvCRj0B56rKgpwGxWdMqUuiy0h7oMlnpyzrtMGwsvUaLjE66FIoG0Lgvz6N1ygtwBxAw5YIoQQfPPTWFXFAZongo9by-Om1V35_TL7AUkHJsZZGdPVMkMnT6wHaQD6QmAYCQKd8YxiA67DYjLZ-7WdRGw"/>
+</div>
+</div>
+</section>
+<!-- Find Us Section -->
+<section class="py-32 bg-surface-container-highest" id="location">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-start">
+<div class="space-y-12">
+<div>
+<h2 class="font-headline text-5xl text-primary mb-6">Smithfield Square</h2>
+<p class="font-body text-on-surface-variant">Block 4, Smithfield Market, <br/>Dublin 7, D07 H320</p>
+</div>
+<div class="space-y-6">
+<h3 class="font-label text-xs uppercase tracking-widest text-secondary font-bold">Trading Hours</h3>
+<div class="grid grid-cols-2 gap-y-4 font-body text-sm">
+<span class="text-on-surface-variant">Mon — Fri</span>
+<span class="text-primary font-bold">07:30 — 17:00</span>
+<span class="text-on-surface-variant">Saturday</span>
+<span class="text-primary font-bold">08:30 — 18:00</span>
+<span class="text-on-surface-variant">Sunday</span>
+<span class="text-primary font-bold">09:00 — 16:00</span>
+</div>
+</div>
+<div class="pt-8">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-lg font-label font-bold tracking-tight hover:bg-primary-container transition-all flex items-center gap-3">
+<span class="material-symbols-outlined" data-icon="directions">directions</span>
+                                Get Directions
+                            </button>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden h-[450px] bg-surface-container shadow-inner">
+<div class="absolute inset-0 bg-neutral-200 flex items-center justify-center">
+<img alt="Map Placeholder" class="w-full h-full object-cover opacity-60" data-alt="Abstract minimalist map of Dublin city center" data-location="Dublin" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCsAT6Ir9knqJ01duhMNOAHEQ3U2F0p1jOmr1zBoOe5yBvfVbULlTk3zh0HwPGU9tAaFhWo7Jc7qZYcPnObQPmqw3tsYbSguUwymp6IMQx6f49N8d5v6K-MGMOCy_B10h_sdLQQNK7I8sbIKjNOwSQJXK-xgtPwCDqxWrnITgu9yinI__-hnURpN58L-_8DZyvC9bw6xoBPPPvtYZsjkeTr2OBMMal33wkmPNRAhF0s6LrLn0VWY0jD_ylFCJAYoRtUK8kb0y-3Q"/>
+<div class="absolute z-10 p-6 bg-white rounded-xl shadow-xl border border-outline-variant/20 flex flex-col items-center">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-2" data-icon="location_on" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<span class="font-label text-xs font-bold uppercase tracking-tight">Roast &amp; Iron</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-[#271310] py-12 px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start max-w-7xl mx-auto">
+<div class="space-y-6">
+<span class="text-xl font-serif text-[#fcf9f4]">The Artisanal Archive</span>
+<p class="font-sans text-sm tracking-tight text-[#dcdad5]">Cultivating the art of the brew in the heart of Dublin's most historic quarter.</p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="flex flex-col gap-4">
+<a class="text-[#dcdad5]/70 hover:text-[#556349] transition-colors hover:underline underline-offset-8 font-sans text-sm tracking-tight" href="#menu">Menu</a>
+<a class="text-[#dcdad5]/70 hover:text-[#556349] transition-colors hover:underline underline-offset-8 font-sans text-sm tracking-tight" href="#story">Our Story</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="text-[#dcdad5]/70 hover:text-[#556349] transition-colors hover:underline underline-offset-8 font-sans text-sm tracking-tight" href="#gallery">Gallery</a>
+<a class="text-[#dcdad5]/70 hover:text-[#556349] transition-colors hover:underline underline-offset-8 font-sans text-sm tracking-tight" href="#location">Location</a>
+</div>
+</div>
+<div class="text-right md:text-right space-y-4">
+<p class="font-sans text-sm tracking-tight text-[#dcdad5]">© 2024 The Artisanal Archive Smithfield. Crafted in Dublin.</p>
+<div class="flex justify-end gap-6 text-[#fcf9f4]">
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary-fixed transition-colors" data-icon="alternate_email">alternate_email</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary-fixed transition-colors" data-icon="share">share</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
